@@ -23,104 +23,111 @@
             android:layout_marginBottom="26dp"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center"
-            android:text="Please select your profile"
+            android:text="@string/please_select_your_profile"
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView1"
-            android:layout_width="match_parent"
-            android:layout_height="89dp"
-            android:layout_margin="16dp">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-            <RadioButton
-                android:id="@+id/radioBtn1"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:buttonTint="#2E3B62"
-                android:checked="true" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:src="@drawable/card_shipper" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:layout_margin="16dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/radioBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#2E3B62" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@drawable/card_shipper" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="112dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/shipper"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="112dp"
+                        android:layout_marginEnd="77dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing1" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:layout_margin="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#2E3B62" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:src="@drawable/transporter" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="112dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="Shipper"
+                    android:text="@string/transporter"
                     android:textColor="@color/black"
-                    android:textSize="18dp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="112dp"
+                    android:layout_marginTop="36dp"
                     android:layout_marginEnd="77dp"
                     android:layout_marginBottom="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing" />
+                    android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing" />
 
 
-            </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="match_parent"
-            android:layout_height="89dp"
-            android:layout_margin="16dp">
-
-            <RadioButton
-                android:id="@+id/radioBtn2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:buttonTint="#2E3B62" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="25dp"
-                android:src="@drawable/transporter" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="112dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto_medium"
-                android:text="Transporter"
-                android:textColor="@color/black"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="112dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="77dp"
-                android:layout_marginBottom="16dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing" />
-
-
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+        </RadioGroup>
 
         <Button
+            android:id="@+id/profileSelection"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginStart="16dp"
@@ -128,7 +135,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="25dp"
             android:background="@drawable/stroke_bg"
-            android:text="Continue" />
+            android:text="@string/continue2" />
 
 
     </LinearLayout>

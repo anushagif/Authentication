@@ -16,23 +16,23 @@ public class MainActivity extends AppCompatActivity {
 
     Button next;
 
-    String[] Language={"English","Hindi","Malayalam","Arabic","Spanish"};
+    String[] Language = {"English", "Hindi", "Malayalam", "Arabic", "Spanish"};
     Spinner spin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        spin=findViewById(R.id.spinner);
-        next=findViewById(R.id.next);
+        spin = findViewById(R.id.spinner);
+        next = findViewById(R.id.next);
 
-        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item,Language);
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, Language);
         spin.setAdapter(adapter);
 
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, ""+adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "" + adapterView.getItemAtPosition(i).toString(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -44,15 +44,10 @@ public class MainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,Mobileno.class);
+                Intent intent = new Intent(MainActivity.this, Mobileno.class);
                 startActivity(intent);
             }
         });
-
-
-
-
-
 
 
     }

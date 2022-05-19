@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".verifyNum"
-    android:background="@drawable/bg_design">
+    android:background="@drawable/bg_design"
+    tools:context=".verifyNum">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,10 +28,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="112dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center"
-            android:text="Verify Phone"
-            android:layout_marginBottom="8dp"
+            android:text="@string/verify_phone"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -53,9 +53,10 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                android:id="@+id/phoneNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0000000000" />
+                android:text="@string/_8094508485" />
 
         </LinearLayout>
 
@@ -63,172 +64,72 @@
             android:id="@+id/ll_otp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="11dp"
             android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:gravity="center"
             android:orientation="horizontal">
 
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp1"
+            <com.chaos.view.PinView
+                android:id="@+id/pin_view"
+                style="@style/PinWidget.PinView"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:cursorVisible="true"
                 android:gravity="center"
-                android:imeOptions="actionNext"
                 android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusDown="@id/et_otp2"
-                android:nextFocusForward="@id/et_otp2"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
+                android:itemBackground="#93D2F3"
+                app:cursorColor="@color/black"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="50dp"
+                app:itemRadius="5dp"
+                app:itemWidth="50dp"
+                app:lineWidth="0dp" />
 
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp2"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp1"
-                android:nextFocusDown="@id/et_otp3"
-                android:nextFocusForward="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp3"
-                android:layout_width="0dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp2"
-                android:nextFocusDown="@id/et_otp4"
-                android:nextFocusForward="@id/et_otp4"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp4"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionGo"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp5"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:imeOptions="actionGo"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/et_otp6"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bg_item_otp_view"
-                android:backgroundTint="#93D2F3"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:imeOptions="actionNext"
-                android:inputType="number"
-                android:maxLength="1"
-                android:nextFocusLeft="@id/et_otp1"
-                android:nextFocusDown="@id/et_otp3"
-                android:nextFocusForward="@id/et_otp3"
-                android:textColor="#1C1C1C"
-                android:textColorHint="#8B8B8B"
-                android:textSize="16sp"
-                android:layout_margin="4dp"
-                tools:background="@drawable/bg_item_otp_view_error"
-                tools:ignore="HardcodedText" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
             android:gravity="center"
-            android:layout_margin="16dp">
-            <EditText
+            android:orientation="horizontal">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Didn’t receive the code?"
                 android:background="@null"
-                android:textSize="14sp"/>
+                android:text="@string/didn_t_receive_the_code"
+                android:textSize="14sp" />
+
             <Space
                 android:layout_width="8dp"
                 android:layout_height="wrap_content" />
 
-            <EditText
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
                 android:background="@null"
-                android:text="Request Again"/>
+                android:text="@string/request_again"
+                android:textSize="14sp" />
         </LinearLayout>
+
         <Button
+            android:id="@+id/verify"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:text="verify and Continue"
-            android:background="@drawable/stroke_bg"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"/>
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/stroke_bg"
+            android:text="@string/verify_and_continue" />
 
-        </LinearLayout>
-
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

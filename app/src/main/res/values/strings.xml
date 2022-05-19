@@ -8,5 +8,20 @@
     <string name="close_buttton">Close button</string>
     <string name="back_button">Back Button</string>
     <string name="code_is_sent_to">code is sent to</string>
+    <string name="_8094508485">8094508485</string>
+    <string name="verify_and_continue">verify and Continue</string>
+    <string name="request_again">Request Again</string>
+    <string name="didn_t_receive_the_code">Didn’t receive the code?</string>
+    <string name="you_ll_receive_a_4_digit_code_to_verify_next">You’ll receive a 4 digit code to verify next.</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="continue3">Continue</string>
+    <string name="continue1">Continue</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
+    <string name="continue2">Continue</string>
+    <string name="transporter">Transporter</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing1">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
+    <string name="shipper">Shipper</string>
+    <string name="please_select_your_profile">Please select your profile</string>
+    <string name="verify_phone">Verify Phone</string>
 
 </resources>
