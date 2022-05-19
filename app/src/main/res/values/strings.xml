@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Authentication</string>
+    <string name="you_can_change_the_language_at_any_time">You can change the language at any time</string>
+    <string name="please_select_your_language">Please select your Language</string>
+    <string name="next">NEXT</string>
+    <string name="image_icon">image Icon</string>
+    <string name="please_enter_your_mobile_number">Please enter your Mobile Number</string>
+    <string name="close_buttton">Close button</string>
+    <string name="back_button">Back Button</string>
+    <string name="code_is_sent_to">code is sent to</string>
+
+</resources>

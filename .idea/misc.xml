@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/back.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/bg_item_otp_view.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/bg_item_otp_view_error.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/card_border.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/custom_spiner.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/custom_spinner.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/dfdsfd.xml" value="0.1075" />
+        <entry key="app/src/main/res/drawable/ic_back.xml" value="0.1245" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/ic_cancel.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1615" />
+        <entry key="app/src/main/res/drawable/stroke_bg.xml" value="0.1615" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/activity_mobileno.xml" value="0.3172103881835938" />
+        <entry key="app/src/main/res/layout/activity_profile_selection.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/activity_verifynum.xml" value="0.2947916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.25416666666666665" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
